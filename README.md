@@ -1,1 +1,1 @@
-Course for spatial data science: Repository to hold class activities for GEO511
+Spatial data science course: Repository to hold class activities for GEO511
