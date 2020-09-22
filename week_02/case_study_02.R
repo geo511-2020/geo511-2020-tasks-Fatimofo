@@ -1,5 +1,5 @@
 library(tidyverse)
-temp=read_csv("https://data.giss.nasa.gov/tmp/gistemp/STATIONS/tmp_USW00014733_14_0_1/station.csv",
+temp=read_csv("https://raw.githubusercontent.com/AdamWilsonLab/GEO511/master/CS_02.csv",
               skip=1,
               na="999.90", 
               col_names = c("YEAR","JAN","FEB","MAR", # define column names 
@@ -18,7 +18,7 @@ ggplot(temp, aes(YEAR, JJA))+
   labs(x="Year", y="Mean Summer Temp(C)",
        title="Annual Mean Summer Temperatures in Buffalo, NY",
        subtitle = "Summer Months include June, July, and August
-       Data from the Global Historical Climate Network
-       Blue line is a LOESS smooth")
+Data from the Global Historical Climate Network
+Blue line is a LOESS smooth")
 
 
